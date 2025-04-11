@@ -38,5 +38,3 @@ def canNguyenThuy(a, n):
     else:
         print(f"{a} không là căn nguyên thủy của {n}")
         return
-
-canNguyenThuy(5, 7)

@@ -2,10 +2,7 @@ import sys
 import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from My_folder.module import Math
 import Euclid_MoRong as e
-import Euler_luyThua as Eu
-import Euler
 
 def tinh(a, b, n):
     a %= n

@@ -7,9 +7,14 @@ from My_folder.module import Math
 def Euler_phi(n):
     Math.sieve(n)
     d = Math._primes
-    tmp = 1
-    for i in d:
-        if n%i == 0:
-            n = n//i
-            tmp *= (i-1)
-    return tmp
+    phi = n
+    for p in d:
+        if p*p > n:
+            break
+        if n%p == 0:
+            while n%p == 0:
+                n //= p
+            phi -= phi//p
+    if n > 1:
+        phi -= phi//n
+    return phi

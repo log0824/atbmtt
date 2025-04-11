@@ -23,3 +23,4 @@ def phanDuTrungHoa(a, k, n):
         ci = Mi*e.Extended_euclid(Mi, i)
         A += ai*ci
     return A%tmp
+print(phanDuTrungHoa(277, 80, 60421))
